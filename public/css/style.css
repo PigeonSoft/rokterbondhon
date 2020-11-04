@@ -1,0 +1,17 @@
+.nav-link{
+    color: #D8203B !important;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #D8203B !important;
+    text-decoration: underline;
+}
+
+.card-header{
+    background-color: #D8203B;
+    color: #fff;
+}
+
+.rokto-logo{
+    max-width: 150px;
+}

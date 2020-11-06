@@ -26,4 +26,5 @@ Route::get('clear-cache', function () {
 
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'HomeController@index')->name('home');
+Route::put('/profile-update/{id}', 'HomeController@update_profile')->name('profile.update');

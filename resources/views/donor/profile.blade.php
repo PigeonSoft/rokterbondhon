@@ -21,74 +21,7 @@
                                         <legend>স্থায়ী ঠিকানা</legend>
                                         <div class="form-group input_item">
                                             <label for="s_district">জেলা<span>*</span></label>
-                                            <select name="s_district" class="form-control custom-select"  id="s_district">
-                                                <option value="{{$donor->s_district}}">{{$donor->s_district}}</option>
-                                                <option value="পঞ্চগড়">পঞ্চগড়</option>
-                                                <option value="ঠাকুরগাঁও">ঠাকুরগাঁও</option>
-                                                <option value="দিনাজপুর">দিনাজপুর </option>
-                                                <option value="রংপুর">রংপুর </option>
-                                                <option value="ঢাকা">ঢাকা</option>
-                                                <option value="কুড়িগ্রাম">কুড়িগ্রাম</option>
-                                                <option value="লালমনিরহাট">লালমনিরহাট</option>
-                                                <option value="নীলফামারী">নীলফামারী </option>
-                                                <option value="গাইবান্ধা">গাইবান্ধা</option>
-                                                <option value="চট্টগ্রাম">চট্টগ্রাম</option>
-                                                <option value="রাজশাহী">রাজশাহী </option>
-                                                <option value="সিলেট"> সিলেট </option>
-                                                <option value="যশোর">যশোর</option>
-                                                <option value="ময়মনসিংহ">ময়মনসিংহ</option>
-                                                <option value="কুমিল্লা">কুমিল্লা </option>
-                                                <option value="বরিশাল">বরিশাল</option>
-                                                <option value="ফরিদপুর">ফরিদপুর </option>
-                                                <option value="বগুড়া">বগুড়া </option>
-                                                <option value="পাবনা">পাবনা </option>
-                                                <option value="রাঙ্গামাটি">রাঙ্গামাটি </option>
-                                                <option value="কুষ্টিয়া">কুষ্টিয়া </option>
-                                                <option value="নোয়াখালী">নোয়াখালী </option>
-                                                <option value="খুলনা">খুলনা</option>
-                                                <option value="টাঙ্গাইল">টাঙ্গাইল </option>
-                                                <option value="ভোলা">ভোলা </option>
-                                                <option value="বান্দরবান">বান্দরবান </option>
-                                                <option value="চাঁদপুর">চাঁদপুর </option>
-                                                <option value="হবিগঞ্জ">হবিগঞ্জ </option>
-                                                <option value="লক্ষীপুর">লক্ষীপুর</option>
-                                                <option value="বরগুনা">বরগুনা </option>
-                                                <option value="ঝালকাঠি">ঝালকাঠি </option>
-                                                <option value="পিরোজপুর">পিরোজপুর </option>
-                                                <option value="পটুয়াখালী">পটুয়াখালী </option>
-                                                <option value="ঝিনাইদহ">ঝিনাইদহ</option>
-                                                <option value="নড়াইল">নড়াইল </option>
-                                                <option value="মাগুরা">মাগুরা </option>
-                                                <option value="সাতক্ষিরা">সাতক্ষিরা</option>
-                                                <option value="বাগেরহাট">বাগেরহাট </option>
-                                                <option value="চুয়াডাঙ্গা">চুয়াডাঙ্গা </option>
-                                                <option value="মেহেরপুর">মেহেরপুর </option>
-                                                <option value="সিরাজগঞ্জ">সিরাজগঞ্জ </option>
-                                                <option value="জয়পুরহাট">জয়পুরহাট </option>
-                                                <option value="নাটোর">নাটোর</option>
-                                                <option value="নওগাঁ">নওগাঁ </option>
-                                                <option value="চাঁপাইনবাবগঞ্জ">চাঁপাইনবাবগঞ্জ</option>
-                                                <option value="খাগড়াছড়ি">খাগড়াছড়ি </option>
-                                                <option value="ফেনী">ফেনী </option>
-                                                <option value="ব্রাহ্মণবাড়ীয়া">ব্রাহ্মণবাড়ীয়া </option>
-                                                <option value="সুনামগঞ্জ">সুনামগঞ্জ</option>
-                                                <option value="কক্সবাজার">কক্সবাজার </option>
-                                                <option value="মৌলভীবাজার">মৌলভীবাজার </option>
-                                                <option value="গোপালগঞ্জ">গোপালগঞ্জ </option>
-                                                <option value="শরীয়তপুর">শরীয়তপুর </option>
-                                                <option value="মাদারীপুর">মাদারীপুর </option>
-                                                <option value="রাজবাড়ী">রাজবাড়ী </option>
-                                                <option value="গাজীপুর">গাজীপুর </option>
-                                                <option value="কিশোরগঞ্জ">কিশোরগঞ্জ</option>
-                                                <option value="জামালপুর">জামালপুর </option>
-                                                <option value="শেরপুর">শেরপুর </option>
-                                                <option value="নেত্রকোনা">নেত্রকোনা</option>
-                                                <option value="মুন্সীগঞ্জ">মুন্সীগঞ্জ </option>
-                                                <option value="নরসিংদী">নরসিংদী </option>
-                                                <option value="নারায়ণগঞ্জ">নারায়ণগঞ্জ</option>
-                                                <option value="মানিকগঞ্জ">মানিকগঞ্জ </option>
-                                                <option value="অন্যান্য">অন্যান্য</option>
-                                            </select>
+                                            {{ Form::select('s_district', $districts, $donor->s_district, ['class'=>'form-control custom-select']) }}
                                         </div>
                                         <div class="input_item">
                                             <label for="s_address">ঠিকানা<span>*</span></label>
@@ -100,74 +33,8 @@
                                         <legend>বর্তমান ঠিকানা </legend>
                                         <div class="form-group input_item">
                                             <label for="district">জেলা<span>*</span></label>
-                                            <select name="district" class="form-control custom-select"  id="district">
-                                                <option value="{{$donor->district}}">{{$donor->district}}</option>
-                                                <option value="পঞ্চগড়">পঞ্চগড়</option>
-                                                <option value="ঠাকুরগাঁও">ঠাকুরগাঁও</option>
-                                                <option value="দিনাজপুর ">দিনাজপুর </option>
-                                                <option value="রংপুর">রংপুর </option>
-                                                <option value="ঢাকা">ঢাকা</option>
-                                                <option value="কুড়িগ্রাম">কুড়িগ্রাম</option>
-                                                <option value="লালমনিরহাট">লালমনিরহাট</option>
-                                                <option value="নীলফামারী">নীলফামারী </option>
-                                                <option value="গাইবান্ধা">গাইবান্ধা</option>
-                                                <option value="চট্টগ্রাম">চট্টগ্রাম</option>
-                                                <option value="রাজশাহী">রাজশাহী </option>
-                                                <option value="সিলেট"> সিলেট </option>
-                                                <option value="যশোর">যশোর</option>
-                                                <option value="ময়মনসিংহ">ময়মনসিংহ</option>
-                                                <option value="কুমিল্লা">কুমিল্লা </option>
-                                                <option value="বরিশাল">বরিশাল</option>
-                                                <option value="ফরিদপুর">ফরিদপুর </option>
-                                                <option value="বগুড়া">বগুড়া </option>
-                                                <option value="পাবনা">পাবনা </option>
-                                                <option value="রাঙ্গামাটি">রাঙ্গামাটি </option>
-                                                <option value="কুষ্টিয়া">কুষ্টিয়া </option>
-                                                <option value="নোয়াখালী">নোয়াখালী </option>
-                                                <option value="খুলনা">খুলনা</option>
-                                                <option value="টাঙ্গাইল">টাঙ্গাইল </option>
-                                                <option value="ভোলা">ভোলা </option>
-                                                <option value="বান্দরবান">বান্দরবান </option>
-                                                <option value="চাঁদপুর">চাঁদপুর </option>
-                                                <option value="হবিগঞ্জ">হবিগঞ্জ </option>
-                                                <option value="লক্ষীপুর">লক্ষীপুর</option>
-                                                <option value="বরগুনা">বরগুনা </option>
-                                                <option value="ঝালকাঠি">ঝালকাঠি </option>
-                                                <option value="পিরোজপুর">পিরোজপুর </option>
-                                                <option value="পটুয়াখালী">পটুয়াখালী </option>
-                                                <option value="ঝিনাইদহ">ঝিনাইদহ</option>
-                                                <option value="নড়াইল">নড়াইল </option>
-                                                <option value="মাগুরা">মাগুরা </option>
-                                                <option value="সাতক্ষিরা">সাতক্ষিরা</option>
-                                                <option value="বাগেরহাট">বাগেরহাট </option>
-                                                <option value="চুয়াডাঙ্গা">চুয়াডাঙ্গা </option>
-                                                <option value="মেহেরপুর">মেহেরপুর </option>
-                                                <option value="সিরাজগঞ্জ">সিরাজগঞ্জ </option>
-                                                <option value="জয়পুরহাট">জয়পুরহাট </option>
-                                                <option value="নাটোর">নাটোর</option>
-                                                <option value="নওগাঁ">নওগাঁ </option>
-                                                <option value="চাঁপাইনবাবগঞ্জ">চাঁপাইনবাবগঞ্জ</option>
-                                                <option value="খাগড়াছড়ি">খাগড়াছড়ি </option>
-                                                <option value="ফেনী">ফেনী </option>
-                                                <option value="ব্রাহ্মণবাড়ীয়া">ব্রাহ্মণবাড়ীয়া </option>
-                                                <option value="সুনামগঞ্জ">সুনামগঞ্জ</option>
-                                                <option value="কক্সবাজার">কক্সবাজার </option>
-                                                <option value="মৌলভীবাজার">মৌলভীবাজার </option>
-                                                <option value="গোপালগঞ্জ">গোপালগঞ্জ </option>
-                                                <option value="শরীয়তপুর">শরীয়তপুর </option>
-                                                <option value="মাদারীপুর">মাদারীপুর </option>
-                                                <option value="রাজবাড়ী">রাজবাড়ী </option>
-                                                <option value="গাজীপুর">গাজীপুর </option>
-                                                <option value="কিশোরগঞ্জ">কিশোরগঞ্জ</option>
-                                                <option value="জামালপুর">জামালপুর </option>
-                                                <option value="শেরপুর">শেরপুর </option>
-                                                <option value="নেত্রকোনা">নেত্রকোনা</option>
-                                                <option value="মুন্সীগঞ্জ">মুন্সীগঞ্জ </option>
-                                                <option value="নরসিংদী">নরসিংদী </option>
-                                                <option value="নারায়ণগঞ্জ">নারায়ণগঞ্জ</option>
-                                                <option value="মানিকগঞ্জ">মানিকগঞ্জ </option>
-                                                <option value="অন্যান্য">অন্যান্য</option>
-                                            </select>
+                                            {{ Form::select('district', $districts, $donor->district, ['class'=>'form-control custom-select']) }}
+
                                         </div>
                                         <div class="input_item">
                                             <label for="address">ঠিকানা<span>*</span></label>
@@ -184,19 +51,9 @@
 
                                     <div class="form-group input_item">
                                         <label for="district">রক্তের  গ্রুপ<span>*</span></label>
-                                        <select name="blood_group" class="form-control custom-select"  id="district">
-                                            <option value="{{$donor->blood_group}}">{{$donor->blood_group}}</option>
-                                            <option value="A+">A+</option>
-                                            <option value="A-">A-</option>
-                                            <option value="B+">B+</option>
-                                            <option value="B-">B-</option>
-                                            <option value="O+">O+</option>
-                                            <option value="O-">O-</option>
-                                            <option value="AB+">AB+</option>
-                                            <option value="AB-">AB-</option>
-                                        </select>
-                                    </div>
+                                        {{ Form::select('blood_group', $groups, $donor->blood_group, ['class'=>'form-control custom-select']) }}
 
+                                    </div>
 
                                     <div class="date_top_text">
                                         <div class="input_item">
@@ -213,11 +70,11 @@
                                     </div>
                                     <div class="input_item">
                                         <label for="birthday">জন্ম তারিখঃ<span>*</span></label>
-                                        <input type="date" name="birthday" value="{{$donor->name}}" class="form-control" placeholder="জন্ম তারিখ" autocomplete="off">
+                                        <input type="date" name="birthday" value="{{$donor->birthday}}" class="form-control" placeholder="জন্ম তারিখ" autocomplete="off">
                                     </div>
 
-                                    <div class="submit " >
-                                        <input type="submit" name="register_button" value="রেজিস্ট্রেশন" />
+                                    <div class="submit pull-right" >
+                                        <p align="right"><input type="submit" name="register_button" value="তথ্য হালনাগাদ" class="btn btn-outline-danger" /></p>
                                     </div>
 
                                 {!! Form::close() !!}

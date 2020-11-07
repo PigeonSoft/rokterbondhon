@@ -1,99 +1,80 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('content')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- Start Search Area -->
+        <section class="header_search_area">
+            <div class="container">
+                <div class="header_content_area">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+                    <div class="row section_padding home_search_area" >
+                        <div class="col-md-8 platelet-left-header offset-2">
+                            <h2>রক্তবন্ধু খুঁজুন  ....</h2>
+                            <hr>
+                            {!! Form::open(array('route'=> 'search','method'=>'POST')) !!}
+                                <div class="form-group">
+                                    <div class="select_grouph_area">
+                                        {{ Form::select('blood_group', $groups, null, ['class'=>'form-control custom-select']) }}
+                                    </div>
+                                </div>
 
-            .full-height {
-                height: 100vh;
-            }
+                                <div class="form-group">
+                                    <div class="select_location_area select_grouph_area">
+                                        {{ Form::select('district', $districts, null, ['class'=>'form-control custom-select']) }}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="search_button">
+                                        <!-- <input name="send" value="খুঁজুন" name="search_button" type="submit"> -->
+                                        <button type="submit" name="search_button"><i class="fa fa-search"></i> <span>খুঁজুন</span></button>
+                                    </div>
+                                </div>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
 
-            .position-ref {
-                position: relative;
-            }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+                            {!! Form::close() !!}
+                        </div>
 
-            .content {
-                text-align: center;
-            }
+                    </div>
 
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
-        </div>
-    </body>
-</html>
+        </section>
+        <!-- End Search Area -->
+
+        <!-- Start services Area  -->
+        <section class="services-area">
+            <div class="container">
+                <div class="row section_padding">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="services_chat_area text-center">
+                            <a href="{{url('register')}}">রক্তবন্ধু হতে রেজিস্ট্রেশন করুন</a>
+                        </div>
+                        <br>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End services Area  -->
+
+        <!-- Start social Area -->
+        <section class="socila_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="social_area">
+                            <ul>
+                                <li><a href="#"> <img src="{{ asset('public/images/fb.jpg') }}" alt="" /></a></li>
+                                <li class="last_item"><a href="#"><img src="{{ asset('public/images/play.png') }}" alt="" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End socila Area -->
+
+@endsection

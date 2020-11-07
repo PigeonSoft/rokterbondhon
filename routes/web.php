@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@homepage');
+Route::get('/home', 'HomeController@redirect_to_home');
+Route::post('/search', 'HomeController@search')->name('search');
+
+
 
 Auth::routes();
 
@@ -26,5 +28,5 @@ Route::get('clear-cache', function () {
 
 });
 
-Route::get('/profile', 'HomeController@index')->name('home');
+Route::get('/profile', 'HomeController@index')->name('profile');
 Route::put('/profile-update/{id}', 'HomeController@update_profile')->name('profile.update');

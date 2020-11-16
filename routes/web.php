@@ -16,7 +16,6 @@ Route::get('/home', 'HomeController@redirect_to_home');
 Route::post('/search', 'HomeController@search')->name('search');
 
 
-
 Auth::routes();
 
 Route::get('clear-cache', function () {

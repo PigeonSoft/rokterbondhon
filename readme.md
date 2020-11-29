@@ -5,6 +5,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+<img src="public/images/screenshot.png">
+
 ## About Rokterbondhon
 
 This project is designed for successful completion of a project on blood bank management system.

@@ -24,6 +24,8 @@
     <link href="{{ asset('public/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/owl.theme.default.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/normalize.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/responsive.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/lightbox.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -101,20 +103,7 @@
     </div>
     <div class="main-footer">
         <!-- Start Notice Area -->
-        <section class="notice-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="notice_bord text-center">
-
-                            <p><span>নোটিশঃ</span> রক্তেরবন্ধন এর সাথে কাজ করতে চাইলে, রক্তেরবন্ধন সম্পর্কে জানতে, পাসওয়ার্ড ভুলে গেলে যোগাযোগ করুন <a href="tel:0177777770
-"><span class="engFont"> 0177777777777</span></a></p>
-                            <p><a class="text-black btn-btn-danger" target="_blank" href="/details"><span class="eng"></span></a> <a class="btn btn-danger-custom" target="_blank" href="/details">রক্তেরবন্ধন সম্পর্কে  বিস্তারিত জানতে ক্লিক করুন </a> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>		<!-- End Notice Area -->
+    
 
         <!-- Start Footer ARea -->
         <footer class="footer-area">

@@ -1,0 +1,243 @@
+@media all and (max-width:1140px){
+	/*.services_chat_area a {
+		width: 66%;
+	}*/
+	
+}
+@media all and (max-width:990px){
+	.search-box input {
+		width: 47%;
+	}
+	/*.services_chat_area a {
+		width: 85%;
+	}*/
+	.header_content_area {
+		padding: 90px 0px;
+	}
+}
+@media all and (min-width:767px){
+	.header_menu_area ul {
+		display:flex !important;
+	}
+	
+}
+
+@media all and (max-width:767px){
+	.thala-header-content {
+		margin-bottom: 20px;
+	}
+	.thala-page-area {
+		margin: 0; 
+	}
+	.thera-left{
+		margin-top: 50px;
+	}
+	.thala-header-content p,
+	.thala-header-content a{
+		font-size: 14px;
+	}
+	.thara-register-form .form-top h2 {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.input_item label{
+		font-size: 14px;
+	}
+
+	.input_item input{
+		font-size: 14px;
+	}
+	.table-area { 
+		overflow: scroll; 
+	}
+	.footer-area,.notice_bord{
+		text-align: center;
+	}
+	.info{
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	.header_menu_area{
+		justify-content: center;
+	}
+	.header_menu_area ul {
+		flex-direction: column;
+		text-align: center;
+		display:none;
+	}
+	.nav_icon {
+		display:block;
+	}
+	.nav_icon {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.nav_icon a {
+		font-size: 18px !important;
+		border-top: 3px solid #D8203B;
+		border-bottom: 3px solid #D8203B;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.header_menu_area ul li a {
+		margin-right: 0px; 
+		margin-bottom: 6px;
+	}
+	.header_content_area {
+		padding: 60px 0px;
+	}
+	.search-box input {
+		width: 76%;
+	}
+	.select_grouph_area {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.footer-right {
+		float: none;
+	}
+	 
+	.social_area ul li a {
+	margin: 10px 34px;
+	
+	}
+	.section_padding {
+		margin-bottom: 50px;
+	}
+	.social_area ul {
+		display: inherit;
+	}
+	.Associate_organization_top h2 {
+		font-size: 22px;
+	}
+	.footer-left {
+		margin-bottom: 10px;
+	}
+	.social_area ul li a {
+		margin: auto;
+		display: block;
+		margin-bottom: 18px;
+		width:300px;
+	}
+	.Associate_organization_bottom p {
+		padding: 8px 48px;
+	}
+	.header-top-area {
+		max-width: 417px;
+		margin: 30px auto;
+	}
+	.form-start {
+		padding: 25px;
+	}
+	 .home_search_area .platelet-left-header{
+    	margin-bottom: 50px;
+    }
+}
+
+
+@media all and (max-width:500px){
+	.single_item {
+		border: none;
+	}
+	.platelet-left-header h2 {
+		font-size: 23px;
+	}
+	.platelet-header-area {
+      padding: 45px 0; 
+    }
+    .platelet-header-right p a{ 
+    	margin-top: 10px;
+    }
+
+
+		
+}
+
+@media all and (max-width:450px){
+	.search-box input {
+		width: 94%;
+	}
+	.select_grouph_area {
+		width: 100%;
+	}
+	.services_chat_area a {
+		width: 88%;
+	}
+	.social_area ul li a {
+		width: 64%;
+		margin-bottom: 15px;
+		line-height: 53px;
+		height: 58px;
+	}
+	/*.logo_area h2 img {
+		height: auto;
+		width: 44px;
+	}*/
+	.logo_area a {
+		font-size: 33px;
+	}
+	.header_content_area {
+		padding: 33px 0px;
+	}
+	.single_item img {
+		width:100% !important;
+		height:auto;
+	}
+	.search-box h3 {
+		padding-bottom: 20px;
+		font-size: 32px;
+	}
+	.services-area {
+		padding: 46px 0px;
+	}
+	.Associate_organization_top h2 {
+		font-size: 29px;
+	}
+	.socila_area {
+		padding: 60px 0px;
+	}
+	.table-heading {
+		text-align: center;
+		background: #D8203B;
+	}
+	.table-heading h2 {
+		background: none !important;
+		margin: 0px;
+		font-size: 29px;
+		padding: 15px 0px;
+	}
+	.Associate_organization_bottom p {
+		font-size: 14px;
+	}
+	.header-top-area {
+		margin: 5px auto;
+	}
+	.social_area ul li a {
+		width: 76%;
+		margin-bottom: 25px;
+		line-height: 28px;
+		height: 113px;
+	}
+	.header-top-area {
+		max-width: 300px;
+		margin: 30px auto;
+	}
+	.header-top-area {
+		margin: 25px auto;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

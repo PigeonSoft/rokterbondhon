@@ -948,8 +948,11 @@ fieldset {
     font-size: 25px !important;
     margin-left: 5px;
 }
-
-.navbar-toggler.navbar-toggler-icon{
-    color: #fff !important;
+/* Change the color in the stroke property of the image data */
+/* botton mobile view */
+.navbar-toggler{
+  
+  color: #ffffff;
+    background-image: url('https://www.flaticon.com/svg/static/icons/svg/151/151917.svg');
+    background-repeat: no-repeat;
 }
-

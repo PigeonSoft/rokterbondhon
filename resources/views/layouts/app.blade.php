@@ -51,6 +51,9 @@
                             <a class="nav-link" href="{{ url('/') }}">হোম</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="https://blog.rokterbondhon.com/">ব্লগ</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('photo-gallery') }}">ফটো গ্যালারি</a>
                         </li>
                         <li class="nav-item">

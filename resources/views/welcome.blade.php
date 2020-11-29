@@ -9,7 +9,7 @@
 
                     <div class="row section_padding home_search_area" >
                         <div class="col-md-8 platelet-left-header offset-2">
-                            <h2>রক্তবন্ধু খুঁজুন  ....</h2>
+                            <h2>রক্তদাতা খুঁজুন  ....</h2>
                             <hr>
                             {!! Form::open(array('route'=> 'search','method'=>'POST')) !!}
                                 <div class="form-group">
@@ -29,9 +29,6 @@
                                         <button type="submit" name="search_button"><i class="fa fa-search"></i> <span>খুঁজুন</span></button>
                                     </div>
                                 </div>
-
-
-
                             {!! Form::close() !!}
                         </div>
 
@@ -48,7 +45,7 @@
                 <div class="row section_padding">
                     <div class="col-xl-12 col-md-12">
                         <div class="services_chat_area text-center">
-                            <a href="{{url('register')}}">রক্তবন্ধু হতে রেজিস্ট্রেশন করুন</a>
+                            <a href="{{url('register')}}">রক্তদাতা হতে রেজিস্ট্রেশন করুন</a>
                         </div>
                         <br>
 
@@ -60,21 +57,44 @@
         </section>
         <!-- End services Area  -->
 
-        <!-- Start social Area -->
-        <section class="socila_area">
+        <!-- Start Image slider Area -->
+         <section class="slider_area">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="social_area">
-                            <ul>
-                                <li><a href="#"> <img src="{{ asset('public/images/fb.jpg') }}" alt="" /></a></li>
-                                <li class="last_item"><a href="#"><img src="{{ asset('public/images/play.png') }}" alt="" /></a></li>
-                            </ul>
+                <div class="row slider_margin">
+                        <div class="owl-carousel owl-theme">
+                            @foreach($sliders as $slide)
+                            <div class="item"> <img src="{{asset('public/uploads/'.$slide->photo)}}" height="200px;" alt=""></div>
+                            @endforeach
                         </div>
-                    </div>
                 </div>
             </div>
-        </section>
-        <!-- End socila Area -->
-
+         </section>
+        <!-- End Image slider Area -->
+        
+{{-- owl carousel script --}}
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1,
+            autoplay:true,
+            autoplay:true,
+        },
+        600:{
+            items:3,
+            autoplay:true,
+            nav:false,
+        },
+        1000:{
+            items:4,
+            autoplay:true,
+            nav:false,
+        }
+    }
+})
+</script>
 @endsection

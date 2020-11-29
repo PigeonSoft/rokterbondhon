@@ -4,18 +4,17 @@ body{
     font-family: 'SolaimanLipi', serif;
     line-height: 30px;
 }
-
 .nav-link{
-    color: #D8203B !important;
+    color: #fff !important;
     font-weight: bold;
 }
 .nav-link:hover{
-    color: #D8203B !important;
+    color: #fff !important;
     text-decoration: underline;
 }
 
 .card-header{
-    background-color: #D8203B;
+    background-color: #970808;
     color: #fff;
 }
 
@@ -50,7 +49,7 @@ legend {
 
 
 .header_search_area {
-    background: url(../images/search_ba_1.jpg) no-repeat scroll 0 0 / cover;
+    background: url(../images/banner.jpg) no-repeat scroll 0 0 / cover;
     position:relative;
     z-index:2
 }
@@ -70,7 +69,7 @@ legend {
 /******* Start Search Area ********/
 
 .header_search_area {
-    background: url(../images/search_ba_1.jpg) no-repeat scroll 0 0 / cover;
+    background: url(../images/banner.jpg) no-repeat scroll 0 0 / cover;
     position:relative;
     z-index:2
 }
@@ -110,7 +109,7 @@ legend {
     transition:0.5s;
     border-radius: 30px;
     border: 1px solid #CFCFCF;
-    background: #ED0404;
+    background: #970808;
     color:#FFF;
     position: relative;
 }
@@ -144,7 +143,7 @@ legend {
     overflow: hidden;
 }
 .services_chat_area a {
-    background: #ED0404;
+    background: #970808;
     display: inline-block;
     padding: 13px;
     color: #FFF;
@@ -179,7 +178,7 @@ legend {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border: 1px solid #ED0404;
+    border: 1px solid #970808;
     padding: 11px 11px;
 }
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
@@ -200,7 +199,7 @@ legend {
 }
 
 .call_text_area {
-    background: #D8203B;
+    background: #970808;
     padding: 12px 15px;
 }
 .call_text_area p {
@@ -242,7 +241,7 @@ legend {
     padding: 8px 0px;
 }
 .socila_area {
-    background: #ED0404;
+    background: #970808;
     padding: 100px 0px;
     overflow: hidden;
 }
@@ -285,7 +284,8 @@ legend {
 
 }
 .notice-area {
-    background: #34495e;
+    /* background: #34495e; */
+    background:#3a3a3a;
 }
 
 .notice_bord {
@@ -308,7 +308,8 @@ legend {
 /* footer  Area */
 
 .footer-area {
-    background: #2c3e50;
+    /* background: #2c3e50; */
+    background:  #222;
     padding: 15px 0px;
     overflow: hidden;
 }
@@ -325,10 +326,10 @@ legend {
     float: right;
 }
 .footer-right p a{
-    color: #ED0404;
+    color: #1972e6;
 }
 .footer-right p a:hover{
-    color: #FC0027;
+    color: #1972e6;
 }
 .header-top-area {
     max-width: 650px;
@@ -342,7 +343,7 @@ legend {
     font-weight: 600;
     padding: 17px;
     text-transform: uppercase;
-    background: #ED0404;
+    background: #970808;
     color: #fff;
     text-align: center;
     font-family:  'Roboto','Kalpurush';
@@ -398,7 +399,7 @@ label {
 }
 
 span {
-    color: red;
+    color: #970808;
     margin-left: 3px;
 }
 .col-xl-12{
@@ -434,7 +435,7 @@ label {
     font-family:  'Roboto','Kalpurush';
 }
 .submit input:hover {
-    background: #ED0404;
+    background:#970808;
     -webkit-transition: 0.6s;
     -o-transition: 0.6s;
     transition: 0.6s;
@@ -443,11 +444,11 @@ label {
     margin-top: 18px;
 }
 .text_area a {
-    color: red;
+    color: #970808;
     margin-bottom: 6px;
     display: inline-block;
     font-size: 17px;
-    border-bottom: 3px dotted red;
+    border-bottom: 3px dotted #970808;
     font-family:  'Roboto','Kalpurush';
 }
 .requeryment_area {
@@ -463,14 +464,14 @@ label {
 /* Blood table Css */
 
 .table_top {
-    background: #ED0404;
+    background: #970808;
     color: #FFF;
 }
 .table-heading h2 {
     margin: 30px;
     font-size: 22px;
     font-weight: 700;
-    background: #ED0404;
+    background: #970808;
     display: inline-block;
     color: #fff;
     padding: 10px 60px;
@@ -514,7 +515,7 @@ label {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     outline: none;
-    background: #ED0404 !important;
+    background: #970808 !important;
     color: #FFF !important;
     font-size: 28px !important;
     height: 34px;
@@ -533,7 +534,7 @@ label {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     outline: none;
-    background: #ED0404 !important;
+    background: #970808 !important;
     color: #FFF !important;
     font-size: 28px !important;
     height: 34px;
@@ -627,7 +628,7 @@ label {
 }
 
 .names {
-    background: #D8203B;
+    background: #970808;
     color: #FFF;
     padding: 5px 15px;
     border-top-left-radius: 30px;
@@ -660,14 +661,14 @@ legend {
 
 fieldset {
     padding: 5px 15px;
-    border: 2px dashed #000;
+    border: 2px double #970808;
     margin-bottom: 20px;
 }
 
 .through{
     text-decoration: line-through;
-    -webkit-text-decoration-color: red;
-    text-decoration-color: red;
+    -webkit-text-decoration-color: #970808;
+    text-decoration-color: #970808;
 }
 
 .details {}
@@ -677,7 +678,7 @@ fieldset {
     line-height: 27px;
 }
 .details p a{
-    color: #ED0404;
+    color: #970808;
 }
 
 .eng{
@@ -704,7 +705,7 @@ fieldset {
 
 .eye_btn {
     color: #FFF;
-    background: tomato;
+    background: #970808;
     display: inline-block;
     padding: 5px 12px;
     border-radius: 3px;
@@ -720,7 +721,7 @@ fieldset {
     margin-top: 5px;
 }
 .eye_btn:hover{
-    background: #f03e1e;
+    background: #970808;
 }
 .eye_btn:hover i{
     color:#FFF;
@@ -755,7 +756,7 @@ fieldset {
 }
 
 .thara-register-form {
-    border: 1px solid #ED0404;
+    border: 1px solid #970808;
     box-shadow: 0 0 20px #44444452;
     background: #FFF;
 }
@@ -792,7 +793,7 @@ fieldset {
 .platelet-left-header h2 {
     font-weight: 600;
     text-transform: uppercase;
-    color: #ED0404;
+    color:#970808;
     font-family: 'Roboto','Kalpurush';
 }
 
@@ -810,8 +811,8 @@ fieldset {
 }
 
 .platelet_submit_btn input {
-    background: #FF0101;
-    border: 1px solid #FF0101;
+    background: #970808;
+    border: 1px solid #970808;
     color: #FFF;
     padding: 7px 50px;
     border-radius: 30px;
@@ -825,7 +826,7 @@ fieldset {
 
 .don-box {
     text-align: center;
-    border: 2px solid #FF0101;
+    border: 2px solid #970808;
     border-radius: 5px;
     margin-bottom: 60px;
     box-shadow: 0 0 15px #33333329;
@@ -835,7 +836,7 @@ fieldset {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid #FF0101;
+    border: 2px solid #970808;
     text-align: center;
     line-height: 55px;
     font-size: 25px;
@@ -844,7 +845,7 @@ fieldset {
     transform: translateY(-33px);
     color: #FFF;
     box-sizing: border-box;
-    background:#FF0101;
+    background:#970808;
 }
 
 .don-details {
@@ -863,7 +864,7 @@ fieldset {
     line-height: 26px;
 }
 .don-details p.last_d_date {
-    background: red;
+    background: #970808;
     color: #FFF;
     padding: 5px;
     font-weight: bold;
@@ -877,7 +878,7 @@ fieldset {
 }
 .don-buttons ul li{
     flex: 0 0 50%;
-    background: #FF0000;
+    background: #970808;
 }
 .don-buttons ul li:first-child{}
 .don-buttons ul li:last-child{
@@ -892,7 +893,7 @@ fieldset {
     padding-right: 10px;
 }
 .time_hoi_nai {
-    color: red;
+    color: #970808;
     font-weight: bold;
 }
 
@@ -905,5 +906,46 @@ fieldset {
 
 .platelet_alert {
     margin-top: 50px;
+}
+
+/* owl carousel customize */
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 35px !important;
+    margin-bottom: 36px;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+    display: none !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background:#970808 !important;
+}
+/* footer button */
+.btn-danger-custom{
+    background-color: #970808;
+    color: #fff;
+}
+.btn-danger-custom:hover{
+                background-color: #000;
+                color: #fff;
+}
+/* navbar */
+.navbar{
+       background-color: #970808;
+}
+/* button costumize */
+.bg-danger{
+    background-color: #970808 !important;
+}
+.border-danger{
+   border-color: #970808 !important;
+}
+/* slider area */
+.slider_area{
+        margin-bottom: 100px;
+}
+/* facebook icon */
+ .fa-facebook-square{
+    font-size: 25px !important;
+    margin-left: 5px;
 }
 

@@ -29,3 +29,9 @@ Route::get('clear-cache', function () {
 
 Route::get('/profile', 'HomeController@index')->name('profile');
 Route::put('/profile-update/{id}', 'HomeController@update_profile')->name('profile.update');
+// photo gallery
+Route::get('/photo-gallery','HomeController@gallery')->name('photo-gallery');
+Route::resource('sliders', 'SliderController');
+// organization forum
+Route::get('/organization-forum','HomeController@forum')->name('organization-forum');
+Route::resource('organizations', 'OrganizationController');

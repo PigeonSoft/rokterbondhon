@@ -1,13 +1,15 @@
 <!-- Created by Ariful Islam at 11/04/2020 - 2:27 PM -->
 @extends('layouts.app')
-
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">রক্তদাতার তথ্য</div>
-
+                    <div class=""><a class="btn btn-danger-custom text-light float-right mt-2 p-2"
+                     data-toggle="modal" data-target="#photoModal">ছবি সংরক্ষণ করুন</a>
+                    </div>
+                     <div></div>
                     <div class="card-body">
                         <div class="col-xl-12">
                             <div class="form-start">
@@ -74,7 +76,7 @@
                                     </div>
 
                                     <div class="submit pull-right" >
-                                        <p align="right"><input type="submit" name="register_button" value="তথ্য হালনাগাদ" class="btn btn-outline-danger" /></p>
+                                        <p align="right"><input type="submit" name="register_button" value="তথ্য হালনাগাদ" class="btn btn-danger-custom" /></p>
                                     </div>
 
                                 {!! Form::close() !!}
@@ -105,5 +107,51 @@
             </div>
         </div>
     </div>
+     <!-- Modal -->
+  <div id="photoModal" class="modal fade">
+    <div class="modal-dialog modal-dialog-vertical-center" role="document">
+      <div class="modal-content bd-0 tx-14">
+        <div class="modal-header pd-y-20 pd-x-25">
+          <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">ছবি সংরক্ষণ করুন</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {{-- show error message for sql query --}}
+        @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+        <div class="modal-body pd-25">
+          <form action="{{ route('sliders.store')}}" method="POST" enctype="multipart/form-data">
+            @csrf
+         <div class="form-group row">
+           <label for="caption" class="col-sm-3">ক্যাপশন</label>
+           <input type="text" class="form-control col-sm-8" name="caption" autofocus>
+           </div>
+
+         <div class="form-group row">
+           <label for="description" class="col-sm-3">বর্ণনা</label>
+           <input type="text" class="form-control col-sm-8" name="description" autofocus>
+           </div>
+
+         <div class="form-group row">
+           <label for="photo" class="col-sm-3">ছবি</label>
+           <input type="file" class="form-control col-sm-8" name="photo">
+           </div>
+           <div class="modal-footer">
+            <button type="submit" class="btn btn-danger-custom pd-x-20">সংরক্ষণ</button>
+            <button type="button" class="btn btn-danger pd-x-20" data-dismiss="modal">কেটে দিন</button>
+               </div>
+           </form>
+        </div>
+      </div>
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
 @endsection
 

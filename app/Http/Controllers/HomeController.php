@@ -1,9 +1,9 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Donor;
 use App\Helpers\StaticData;
+use App\Organization;
+use App\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,8 +13,9 @@ class HomeController extends Controller
     {
         $districts = StaticData::get_district();
         $groups = StaticData::get_blood_group();
+        $sliders = Slider::all();
 
-        return view('welcome', compact('districts', 'groups'));
+        return view('welcome', compact('districts', 'groups','sliders'));
     }
 
     /**
@@ -55,5 +56,15 @@ class HomeController extends Controller
         $donors = Donor::where('blood_group', '=', $input['blood_group'])->where('district', '=', $input['district'])->get();
 
         return view('search', compact('donors', 'group'));
+    }
+    // photo gallery 
+    public function gallery(){
+           $photos = Slider::all();
+           return view('gallery.photo-gallery',compact('photos'));
+    }
+    // organization forum
+    public function forum(){
+           $forums = Organization::all();
+           return view('forum.organization-forum',compact('forums'));
     }
 }

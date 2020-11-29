@@ -10,7 +10,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('public/js/app.js') }}" defer></script>
+    <script src="{{ asset('public/js/app.js') }}"></script>
+    <script src="{{ asset('public/js/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ asset('public/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('public/js/lightbox.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,14 +22,17 @@
     <!-- Styles -->
     <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/owl.theme.default.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/lightbox.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('public/images/rokterbondhon.png') }}" alt="" class="rokto-logo">
+                    <img src="{{ asset('public/images/rokterbondhon_white.png') }}" alt="" class="rokto-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -43,6 +49,12 @@
                         <!-- Authentication Links -->
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}">হোম</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('photo-gallery') }}">ফটো গ্যালারি</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('organizations') }}">সংগঠন</a>
                         </li>
                         @guest
                             <li class="nav-item">
@@ -92,9 +104,9 @@
                     <div class="col-xl-12">
                         <div class="notice_bord text-center">
 
-                            <p><span>নোটিশঃ</span> রক্তেরবন্ধন এর সাথে কাজ করতে চাইলে, রক্তবন্ধু সম্পর্কে জানতে, পাসওয়ার্ড ভুলে গেলে যোগাযোগ করুন <a href="tel:0177777770
+                            <p><span>নোটিশঃ</span> রক্তেরবন্ধন এর সাথে কাজ করতে চাইলে, রক্তেরবন্ধন সম্পর্কে জানতে, পাসওয়ার্ড ভুলে গেলে যোগাযোগ করুন <a href="tel:0177777770
 "><span class="engFont"> 0177777777777</span></a></p>
-                            <p><a class="text-black btn-btn-danger" target="_blank" href="/details"><span class="eng"></span></a> <a class="btn btn-danger" target="_blank" href="/details">রক্তবন্ধু সম্পর্কে  বিস্তারিত জানতে ক্লিক করুন </a> </p>
+                            <p><a class="text-black btn-btn-danger" target="_blank" href="/details"><span class="eng"></span></a> <a class="btn btn-danger-custom" target="_blank" href="/details">রক্তেরবন্ধন সম্পর্কে  বিস্তারিত জানতে ক্লিক করুন </a> </p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +124,7 @@
                     </div>
                     <div class="col-xl-6 col-md-6 col-sm-6 col-12">
                         <div class="footer-right">
-                            <p> Developed By <a target="_blank" href="https://pigeon-soft.com/"> Pigeon Soft</a></p>
+                            <p> Follow us on <a target="_blank" href="#"><i class="fa fa-facebook-square"></i></a></p>
                         </div>
                     </div>
                 </div>
